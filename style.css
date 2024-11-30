@@ -1,0 +1,556 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Add padding to the top of the body or content section */
+/* Alternatively, you can add padding to the section where the content starts */
+main {
+    padding-top: 100px; /* Or apply this to the main content section, adjust as needed */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Yellow text */
+    line-height: 1.6;
+}
+/* Header Container */
+header .header-container {
+    display: flex;
+    justify-content: space-between; /* Pushes the logo to the left and the menu to the right */
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+header .logo {
+    flex: 0; /* Fixes the logo size */
+}
+
+header .logo img {
+    height: 50px; /* Logo size */
+}
+
+/* Navigation Menu */
+header nav {
+    flex: 1; /* Ensures nav takes remaining space */
+    text-align: right; /* Aligns menu items to the right */
+}
+
+header nav ul.menu {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.menu li {
+    margin: 0 10px;
+}
+
+header nav ul.menu li a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+header nav ul.menu li a:hover {
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #FFD700;
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center;
+    justify-content: space-between; /* Space between logo and menu */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    flex: 0; /* Fix logo alignment */
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    flex: 1; /* Pushes menu to the right */
+    text-align: right; /* Aligns menu items to the right */
+}
+
+header nav ul.menu {
+    display: inline-flex; /* Ensure menu items are in a row */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.menu li {
+    margin: 0 10px;
+}
+
+header nav ul.menu li a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+header nav ul.menu li a:hover {
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    height: 90vh;
+    background-image: url('hero1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #FFD700; /* Yellow text */
+    padding: 0 40px; /* Adjust horizontal padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Dark Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative; /* To appear above the overlay */
+    z-index: 2;
+    max-width: 50%;
+    margin-left: 40px; /* Push content slightly inward */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Large heading */
+    font-weight: bold;
+    margin: 0 0 15px;
+    color: #FFD700; /* Bright yellow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    line-height: 1.8; /* Better line spacing */
+    color: #FFEB3B; /* Slightly lighter yellow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+/* Hero Button */
+.hero-content .hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #FFD700;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+.hero-content .hero-btn:hover {
+    background-color: #FFEB3B;
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #FFD700;
+}
+
+/* About Us Section */
+#about-us {
+    padding: 20px;
+    background: #111;
+}
+
+#about-us p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Our Work Section */
+.our-work {
+    padding: 60px 20px;
+    background-color: #111; /* Dark background for contrast */
+    color: #FFD700; /* Yellow theme */
+    text-align: center;
+}
+
+.our-work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.our-work p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #FFEB3B; /* Slightly lighter yellow */
+}
+
+/* Work Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Work Item */
+.work-item {
+    background: #222; /* Dark background for the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.work-item a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color for the link */
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height to keep uniformity */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container */
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover .image-container img {
+    transform: scale(1.1); /* Zoom in on image when hovering */
+}
+
+/* Work Item Title */
+.work-item h3 {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin: 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.work-item:hover h3 {
+    color: #FFEB3B; /* Change text color slightly on hover */
+}
+
+
+
+/* Our Clients Section */
+/* Our Clients Section */
+.our-clients {
+    padding: 60px 20px;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #111; /* Dark text for contrast */
+    text-align: center;
+}
+
+.our-clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700; /* Yellow text for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.our-clients p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #333; /* Dark gray for the description */
+}
+
+/* Client Logos Grid */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Increased space between logos */
+}
+
+/* Client Logo */
+.client-logo {
+    background: #ffffff; /* Light background for the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center the logo and name */
+    max-width: 250px; /* Optional max width to keep the logos from becoming too large */
+    margin: 0 auto; /* Center the logos within their grid cells */
+}
+
+.client-logo img {
+    max-width: 100%; /* Ensure logos don't stretch */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.client-logo .client-name {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #111; /* Dark color for client names */
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize names */
+    letter-spacing: 1px; /* Space out letters for clarity */
+}
+
+/* Hover Effect */
+.client-logo:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow to emphasize the logo */
+}
+
+/* Optional: Add a hover effect on the name */
+.client-logo:hover .client-name {
+    color: #FFD700; /* Change the name color on hover */
+}
+
+
+/* Contact Us Section */
+#contact-us {
+    padding: 20px;
+    background: #222;
+}
+
+#contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-us form label {
+    margin: 10px 0 5px;
+}
+
+#contact-us form input,
+#contact-us form textarea,
+#contact-us form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+    width: 100%;
+    background: #333;
+    color: #FFD700;
+}
+
+#contact-us form button {
+    background: #FFD700;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-us form button:hover {
+    background: #FFC107;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #FFC107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    header nav ul.menu {
+        flex-direction: column;
+    }
+
+    header nav ul.menu li {
+        margin: 5px 0;
+    }
+}
+
+/* Portfolio Page Styles */
+.service-item {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.portfolio-designs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.design-example {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.design-example img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.design-example p {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.service-item .order-btn {
+    background-color: #FFD700;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-item .order-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Portfolio Header Styling */
+/* Header Styles */
+.portfolio-header {
+    background-color: #000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.portfolio-header .logo img {
+    max-width: 120px; /* Adjust based on your logo size */
+}
+
+.portfolio-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-header nav ul li {
+    margin: 0 20px;
+}
+
+.portfolio-header nav ul li a {
+    color: #FFD700; /* Yellow for the links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.portfolio-header nav ul li a:hover {
+    color: #fff; /* White when hovered */
+}
