@@ -39,7 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
         *Graphics Provided*: ${graphicsProvided}
         *Additional Info*: ${additionalInfo}`;
 
-        const whatsappLink = `https://wa.me/254725278245?text=${encodeURIComponent(message)}`; // Replace with your WhatsApp number
+        
+
+        const whatsappLink = `https://wa.me/254768119403?text=${encodeURIComponent(message)}`; // Replace with your WhatsApp number
+
+        
 
         // Open WhatsApp and close the modal
         window.open(whatsappLink, "_blank");
