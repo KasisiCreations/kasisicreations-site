@@ -14,7 +14,7 @@ main {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
+    background-color: #000; /* Black background */ 
     color: #FFD700; /* Yellow text */
     line-height: 1.6;
 }
@@ -553,4 +553,165 @@ footer .social-links a:hover {
 
 .portfolio-header nav ul li a:hover {
     color: #fff; /* White when hovered */
+}
+
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blurs the background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Slightly darker background */
+    backdrop-filter: blur(8px); /* Smooth blur effect */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #1a1a1a; /* Dark Black */
+    color: #fff; /* White Text */
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Elegant shadow */
+    text-align: left;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #ffcc00; /* Yellow heading */
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow labels */
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 5px;
+    background: #2b2b2b; /* Slightly lighter black */
+    color: #fff;
+    font-size: 14px;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus,
+.modal-content select:focus {
+    border-color: #ffcc00; /* Highlight border */
+    outline: none;
+}
+
+/* Form Submit Button */
+.modal-content button {
+    margin-top: 20px;
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black Text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    width: 100%; /* Full-width button */
+}
+
+.modal-content button:hover {
+    background-color: #e6b800; /* Darker Yellow */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffcc00; /* Yellow Close Icon */
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .modal-content button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Show Modal */
+.modal.show {
+    display: flex;
+}
+
+.get-quote-btn {
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.get-quote-btn:hover {
+    background-color: #e6b800; /* Darker Yellow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transform: translateY(-2px); /* Hover lift */
 }

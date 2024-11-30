@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="portfolio-header">
+    <header class="portfolio-header"> 
         <div class="logo">
             <img src="Kasisilogo.png" alt="Company Logo">
         </div>
@@ -17,8 +17,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#branding">Branding and Identity</a></li>
                 <li><a href="#marketing">Marketing and Advertising</a></li>
-                <li><a href="#packaging">Packaging</a></li>
-                <li><a href="#illustrations">Illustrations</a></li>
+                <li><a href="#packaging">Packaging Design</a></li>
+                <li><a href="#packaging">Web Design</a></li>
+                <li><a href="#illustrations">Illustrations and ArtWork</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +46,7 @@
                         <p>Logo Design for DEF Enterprises</p>
                     </div>
                 </div>
-                <button class="order-btn">Get a Quote</button>
+                <button class="get-quote-btn">Get a Quote</button>
             </div>
 
             <div class="service-item">
@@ -60,7 +61,7 @@
                         <p>Business Card Design for ABC Ltd.</p>
                     </div>
                 </div>
-                <button class="order-btn">Get a Quote</button>
+                <button class="get-quote-btn">Get a Quote</button>
             </div>
             <!-- More branding services here -->
         </section>
@@ -73,6 +74,38 @@
     <footer>
         <p>&copy; 2024 Kasisi Creations. All Rights Reserved.</p>
     </footer>
+
+
+
+    <!-- Quote Form Modal -->
+<div id="quoteModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Request a Quote</h2>
+        <form id="quoteForm">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" name="jobDescription" required></textarea>
+
+            <label for="colorTheme">Color or Theme Description</label>
+            <input type="text" id="colorTheme" name="colorTheme">
+
+            <label for="graphicsProvided">Will You Provide Graphics?</label>
+            <select id="graphicsProvided" name="graphicsProvided">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo"></textarea>
+
+            <button type="submit">Send Quote</button>
+        </form>
+    </div>
+</div>
+
 
     <script src="script.js"></script>
 </body>
